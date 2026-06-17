@@ -1,0 +1,40 @@
+{
+  "schema_version": "openai_ads_plan.v1",
+  "mode": "create_paused",
+  "provenance": {
+    "source": "test_fixture",
+    "approval_ref": null
+  },
+  "ad_account": {},
+  "campaign": {
+    "name": "x",
+    "objective": "clicks",
+    "status": "active",
+    "budget": {
+      "daily_spend_limit_micros": 10
+    }
+  },
+  "ad_groups": [
+    {
+      "name": "Core intent",
+      "status": "paused",
+      "context_hints": [],
+      "bidding_config": {
+        "billing_event_type": "bad",
+        "max_bid_micros": 0
+      },
+      "ads": [
+        {
+          "name": "Bad ad",
+          "status": "paused",
+          "creative": {
+            "type": "chat_card",
+            "title": "x",
+            "body": "This body is fine",
+            "target_url": "not-a-url"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenAI Ads Skill"
+  short_description: "Plan, validate, and create ChatGPT Ads"
+  default_prompt: "Use $openai-ads-skill to plan, validate, and create a gated ChatGPT Ads campaign."

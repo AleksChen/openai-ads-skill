@@ -1,0 +1,43 @@
+{
+  "name": "openai-ads-skill",
+  "version": "0.1.0",
+  "description": "Safety-first Agent Skill for planning and validating OpenAI Ads / ChatGPT Ads campaigns.",
+  "author": {
+    "name": "Aleks Chen",
+    "url": "https://github.com/AleksChen"
+  },
+  "homepage": "https://github.com/AleksChen/openai-ads-skill",
+  "repository": "https://github.com/AleksChen/openai-ads-skill",
+  "license": "MIT",
+  "keywords": [
+    "agent-skill",
+    "openai-ads",
+    "chatgpt-ads",
+    "advertising",
+    "campaign-validation",
+    "ads-api",
+    "safety"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenAI Ads Skill",
+    "shortDescription": "Plan and validate ChatGPT Ads with safety gates",
+    "longDescription": "A reusable Agent Skill for planning, validating, and safely operating OpenAI Ads / ChatGPT Ads workflows. It separates planning, validation, paused creation, activation, monitoring, and onboarding so agents cannot silently move from drafting to spend.",
+    "developerName": "Aleks Chen",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Plan and validate a ChatGPT Ads campaign.",
+      "Check an OpenAI Ads plan for launch risks.",
+      "Run a read-only OpenAI Ads account check."
+    ],
+    "websiteURL": "https://github.com/AleksChen/openai-ads-skill",
+    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "brandColor": "#0F766E",
+    "screenshots": []
+  }
+}

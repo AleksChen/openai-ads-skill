@@ -1,0 +1,73 @@
+{
+  "schema_version": "openai_ads_plan.v1",
+  "mode": "validate_only",
+  "provenance": {
+    "source": "test_fixture",
+    "approval_ref": null,
+    "created_by": "test"
+  },
+  "ad_account": {
+    "expected_id": "adacct_example",
+    "expected_name": "Example Ads",
+    "country": "US",
+    "currency_code": "USD",
+    "timezone": "America/Los_Angeles"
+  },
+  "campaign": {
+    "name": "Example validation campaign",
+    "description": "Fixture campaign",
+    "objective": "clicks",
+    "status": "paused",
+    "start_time": null,
+    "end_time": null,
+    "budget": {
+      "daily_spend_limit_micros": 100000000
+    },
+    "targeting": {
+      "locations": {
+        "countries": ["US"]
+      }
+    }
+  },
+  "ad_groups": [
+    {
+      "name": "Core intent",
+      "description": "Fixture ad group",
+      "status": "paused",
+      "context_hints": [
+        "user conversations about evaluating AI productivity software",
+        "user conversations about team workflow automation"
+      ],
+      "bidding_config": {
+        "billing_event_type": "click",
+        "max_bid_micros": 4000000
+      },
+      "ads": [
+        {
+          "name": "Core card A",
+          "status": "paused",
+          "creative": {
+            "type": "chat_card",
+            "title": "Plan work faster",
+            "body": "Turn team goals into tasks, owners, and launch plans.",
+            "target_url": "https://example.com/openai-ads-test",
+            "image_url": "https://example.com/assets/ad-card.png",
+            "file_id": null
+          }
+        },
+        {
+          "name": "Core card B",
+          "status": "paused",
+          "creative": {
+            "type": "chat_card",
+            "title": "Ship clearer plans",
+            "body": "Coordinate strategy, tasks, and reviews in one workflow.",
+            "target_url": "https://example.com/openai-ads-test",
+            "image_url": "https://example.com/assets/ad-card-b.png",
+            "file_id": null
+          }
+        }
+      ]
+    }
+  ]
+}

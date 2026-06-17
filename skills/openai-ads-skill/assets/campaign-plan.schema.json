@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/AleksChen/openai-ads-skill/assets/campaign-plan.schema.json",
+  "title": "OpenAI Ads Campaign Plan",
+  "type": "object",
+  "required": ["schema_version", "mode", "provenance", "ad_account", "campaign", "ad_groups"],
+  "properties": {
+    "schema_version": {
+      "const": "openai_ads_plan.v1"
+    },
+    "mode": {
+      "enum": ["plan_only", "validate_only", "create_paused", "enable", "monitor", "ui_onboarding"]
+    }
+  }
+}

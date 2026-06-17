@@ -1,0 +1,18 @@
+{
+  "name": "openai-ads-skill-dev",
+  "description": "Development marketplace for the OpenAI Ads Agent Skill.",
+  "owner": {
+    "name": "Aleks Chen"
+  },
+  "plugins": [
+    {
+      "name": "openai-ads-skill",
+      "description": "Safety-first Agent Skill for planning and validating OpenAI Ads / ChatGPT Ads campaigns.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Aleks Chen"
+      }
+    }
+  ]
+}

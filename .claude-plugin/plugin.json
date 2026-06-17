@@ -1,0 +1,19 @@
+{
+  "name": "openai-ads-skill",
+  "description": "Safety-first Agent Skill for planning and validating OpenAI Ads / ChatGPT Ads campaigns.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Aleks Chen"
+  },
+  "homepage": "https://github.com/AleksChen/openai-ads-skill",
+  "repository": "https://github.com/AleksChen/openai-ads-skill",
+  "license": "MIT",
+  "keywords": [
+    "agent-skill",
+    "openai-ads",
+    "chatgpt-ads",
+    "advertising",
+    "campaign-validation",
+    "safety"
+  ]
+}

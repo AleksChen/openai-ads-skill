@@ -1,0 +1,38 @@
+{
+  "name": "openai-ads-skill",
+  "version": "0.1.0",
+  "description": "Agent Skill and safe tooling for OpenAI Ads campaign planning and validation.",
+  "type": "module",
+  "main": "./skills/openai-ads-skill/SKILL.md",
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "agent-skill",
+    "openai-ads",
+    "chatgpt-ads",
+    "advertising",
+    "campaign-validation",
+    "codex-plugin",
+    "claude-plugin"
+  ],
+  "scripts": {
+    "test": "node --test skills/openai-ads-skill/tests/*.test.mjs",
+    "validate": "node skills/openai-ads-skill/scripts/validate-plan.mjs",
+    "check-account": "node skills/openai-ads-skill/scripts/check-account.mjs",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "husky": "^9.1.7"
+  }
+}
